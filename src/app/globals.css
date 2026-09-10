@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+body { font-family: var(--font-jakarta), sans-serif; }
+h1,h2,h3 { font-family: var(--font-montserrat), sans-serif; }
+
+:root {
+  --stc-green: #217A4B;
+  --stc-navy: #172546;
+  --stc-gold: #D4A024;
+  --stc-mint: #E9F4F1;
+  --stc-cream: #F9F2ED;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-jakarta), system-ui, sans-serif; }
+h1,h2,h3,h4,.font-display { font-family: var(--font-montserrat), system-ui, sans-serif; }
