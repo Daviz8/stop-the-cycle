@@ -32,7 +32,7 @@ export default function Footer() {
                 { href: '/#programs', label: 'Our Programs' },
                 { href: '/#tlc', label: 'The Life Class' },
                 { href: '/#summit', label: 'Global Summit' },
-                { href: '/#partner', label: 'Partner With Us' },
+                { href: '/partners', label: 'Partner With Us' },
               ].map((l) => (
                 <li key={l.label}>
                   <Link

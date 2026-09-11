@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 import TestimonialSlider from './components/TestimonialCarousel';
-import PartnerTiers from './components/  PartnerTiers';
 import SectionHeading from './components/SectionHeading';
 import { site } from '@/lib/site';
 import {
@@ -14,7 +13,6 @@ import {
   annualSummit,
   tlcPillars,
   testimonials,
-  partners,
 
 } from '@/lib/data';
 import Navbar from './components/structural/Navbar';
@@ -72,10 +70,10 @@ function Hero() {
         <div className="relative animate-fade-up">
           <div className="absolute -left-4 -top-4 hidden h-full w-full rounded-4xl border-2 border-[#D4A024]/30 lg:block" />
           <img
-            src="/imgs/visionary-portrait.jpg"
-            alt="Engr. Uche Juan Augustine, Visionary of Stop The Cycle Initiative"
-            label="Engr. Uche Juan Augustine — Visionary"
-            className="relative aspect-4/5 w-full rounded-4xl shadow-2xl shadow-[#172546]/20"
+            src="/images/stop the cycle.webp"
+            alt="of Stop The Cycle Initiative"
+            label=""
+            className="relative aspect-auto w-full rounded-4xl shadow-2xl shadow-[#172546]/20"
             
           />
           <div className="absolute -bottom-6 -left-4 rounded-2xl bg-white p-5 shadow-2xl shadow-[#172546]/15 sm:-left-8">
@@ -142,11 +140,11 @@ function WhoWeAre() {
             </p>
             <p>
               We believe that the youth and the middle aged are the key to
-              heralding National transformation. Having kicked off for the past
+              heralding global transformation. Having kicked off for the past
               ten years in the city of Port Harcourt City, Nigeria, Stop the
               Cycle Initiative has learnt and mastered the requisite approaches,
               strategies and programs for putting a halt to cycles that impede
-              the National Development of youths.
+              the global Development of youths.
             </p>
             <p>
               Through our events and youth development training, the Initiative
@@ -164,19 +162,19 @@ function WhoWeAre() {
 
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/imgs/gallery/tlc-1.jpg"
+            src="/images/Stc-open-hero.png"
             label="The Life Class Community"
             className="col-span-2 aspect-[16/10] rounded-3xl shadow-xl shadow-[#172546]/10"
           />
           <img
-            src="/imgs/gallery/public-speaking-1.jpg"
+            src="/images/convener-hero.png"
             label="Public Speaking Masterclass"
-            className="aspect-square rounded-3xl shadow-xl shadow-[#172546]/10"
+            className="aspect-auto rounded-3xl shadow-xl shadow-[#172546]/10"
           />
           <img
-            src="/imgs/gallery/annual-summit-1.jpg"
+            src="/images/seaman-hero.png"
             label="Annual Summit"
-            className="aspect-square rounded-3xl shadow-xl shadow-[#172546]/10"
+            className="aspect-auto rounded-3xl shadow-xl shadow-[#172546]/10"
           />
         </div>
       </div>
@@ -241,7 +239,7 @@ function Programs() {
         <SectionHeading
           eyebrow="What We Do"
           title="We train, empower, collaborate and build."
-          description="Using our weekly classes, quarterly vocational trainings and annual national summit for youth development and national transformation."
+          description="Using our weekly classes, quarterly vocational trainings and annual global summit for youth development and global transformation."
         />
 
         <div className="mt-14">
@@ -321,7 +319,6 @@ function Programs() {
     </section>
   );
 }
-
 function TLC() {
   return (
     <section id="tlc" className="scroll-mt-24 bg-[#172546] py-20 lg:py-28">
@@ -390,15 +387,30 @@ function TLC() {
             </div>
           </div>
 
-          <div>
-       
+          {/* HERO IMAGE — mirrors homepage Hero style */}
+          <div className="relative animate-fade-up">
+            <div className="absolute -left-4 -top-4 hidden h-full w-full rounded-[32px] border-2 border-[#D4A024]/30 lg:block" />
+            <img
+              src="/images/life-class-hero.jpg"
+              alt="The Life Class Community gathering"
+              label="The Life Class Community"
+              className="relative aspect-[4/5] w-full rounded-[32px] shadow-2xl shadow-[#172546]/40"
+            />
+
+            <div className="absolute -bottom-6 -left-4 rounded-2xl bg-white p-5 shadow-2xl shadow-[#172546]/25 sm:-left-8">
+              <p className="font-montserrat text-2xl font-extrabold text-[#217A4B]">
+                TLC Community
+                              </p>
+              <p className="text-xs text-[#172546]/70">
+                 #Real Issues #Real Answers
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
 function Summit() {
   const highlights = [
     'Over 3,000 delegates on ground',
@@ -426,10 +438,10 @@ function Summit() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-white/80 sm:text-base">
-                Our flagship annual gathering for youth development and national
-                transformation — bringing together leaders, professionals,
+                Our flagship annual gathering for youth development and global
+                transformation  bringing together leaders, professionals,
                 entrepreneurs, speakers and over 3,000 delegates from every
-                sector for training, skill acquisition, networking and national
+                sector for training, skill acquisition, networking and global
                 conversations.
               </p>
 
@@ -460,8 +472,8 @@ function Summit() {
 
             <div className="relative">
               <img
-                src="/imgs/gallery/annual-summit-2.jpg"
-                label="Stop The Cycle National Summit"
+                src="/images/2026-summit.png"
+                label="Stop The Cycle Global Summit"
                 className="aspect-[4/5] w-full rounded-[28px] shadow-2xl"
               />
             </div>
@@ -505,99 +517,6 @@ function Testimonials() {
   );
 }
 
-function Partnership() {
-  return (
-    <section id="partner" className="scroll-mt-24 bg-[#E9F4F1] py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeading
-          eyebrow="Partner With Us"
-          title="Your partnership empowers the next generation"
-          description="Your partnership, collaboration and support enable us to reach, develop and empower more youths, women and families."
-        />
-
-        <div className="mt-14">
-          <PartnerTiers />
-        </div>
-
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl bg-[#172546] p-9 text-white">
-            <h3 className="font-montserrat text-lg font-extrabold">
-              To Partner With Us
-            </h3>
-            <p className="mt-3 text-sm text-[#E9F4F1]/75">
-              Kindly choose a partnership package and make payment here:
-            </p>
-            <div className="mt-6 space-y-2 rounded-2xl border border-white/15 bg-white/5 p-6">
-              <p className="font-montserrat text-2xl font-extrabold tracking-wide text-[#D4A024]">
-                {site.bank.accountNumber}
-              </p>
-              <p className="text-sm font-semibold text-white">
-                {site.bank.accountName}
-              </p>
-              <p className="text-sm text-[#E9F4F1]/70">{site.bank.bank}</p>
-            </div>
-          </div>
-
-          <div className="rounded-3xl bg-white p-9 shadow-xl shadow-[#172546]/5">
-            <h3 className="font-montserrat text-lg font-extrabold text-[#172546]">
-              For further enquiries
-            </h3>
-            <p className="mt-3 text-sm text-[#172546]/70">
-              Kindly reach out to us:
-            </p>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {site.contact.phones.map((phone) => (
-                <a
-                  key={phone}
-                  href={`tel:${phone.replace(/\s/g, '')}`}
-                  className="rounded-xl bg-[#E9F4F1] px-4 py-3 text-sm font-semibold text-[#217A4B] transition hover:bg-[#217A4B] hover:text-white"
-                >
-                  {phone}
-                </a>
-              ))}
-            </div>
-            <div className="mt-4 space-y-2 text-sm">
-              <a
-                href={`mailto:${site.contact.email}`}
-                className="block font-semibold text-[#172546] hover:text-[#217A4B]"
-              >
-                {site.contact.email}
-              </a>
-              <p className="font-semibold text-[#172546]">
-                {site.contact.website}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function PartnersStrip() {
-  const doubled = [...partners, ...partners];
-  return (
-    <section className="overflow-hidden bg-[#F9F2ED] py-16">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <p className="text-center font-montserrat text-xs font-bold uppercase tracking-[0.3em] text-[#172546]/50">
-          Partners
-        </p>
-      </div>
-      <div className="relative mt-8">
-        <div className="flex w-max animate-marquee gap-4">
-          {doubled.map((p, i) => (
-            <span
-              key={`${p}-${i}`}
-              className="flex h-20 w-48 shrink-0 items-center justify-center rounded-2xl border border-[#217A4B]/12 bg-white px-4 text-center font-montserrat text-xs font-bold uppercase tracking-wider text-[#172546]/70"
-            >
-              {p}
-            </span>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function FinalCTA() {
   return (
@@ -608,8 +527,8 @@ function FinalCTA() {
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-[15px] leading-relaxed text-white/80 sm:text-base">
           Whether you register for the summit, join The Life Class Community or
-          partner with us — you are helping a young person break free and become
-          an agent of national transformation.
+          partner with us  you are helping a young person break free and become
+          an agent of  global transformation.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
@@ -618,7 +537,7 @@ function FinalCTA() {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#D4A024] px-8 py-4 font-montserrat text-sm font-extrabold text-[#172546] shadow-xl transition hover:-translate-y-0.5 hover:bg-white"
           >
-            Register Now →
+          Partner With Us
           </a>
        
         </div>
@@ -640,8 +559,6 @@ export default function HomePage() {
       <Summit />
       <Gallery />
       <Testimonials />
-      <Partnership />
-      <PartnersStrip />
       <FinalCTA />
       <Footer/>
     </>

@@ -26,7 +26,7 @@ export const metadata = {
     'The Life Class Community',
     'Youth Empowerment Nigeria',
     'Port Harcourt',
-    'National Transformation',
+    'Global Transformation',
   ],
 };
 

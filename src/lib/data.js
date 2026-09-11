@@ -66,9 +66,9 @@ export const quarterlyTrainings = [
 ];
 
 export const annualSummit = {
-  title: 'Stop The Cycle National Summit',
+  title: 'Stop The Cycle Global Summit',
   description:
-    'Our flagship annual gathering for youth development and national transformation — bringing together leaders, professionals, entrepreneurs, speakers and over 3,000 delegates for training, skill acquisition, networking and national conversations.',
+    'Our flagship annual gathering for youth development and global transformation bringing together leaders, professionals, entrepreneurs, speakers and over 3,000 delegates for training, skill acquisition, networking and national conversations.',
 };
 
 export const tlcPillars = [

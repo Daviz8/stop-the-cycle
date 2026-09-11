@@ -9,6 +9,12 @@ export const navLinks = [
     url: "/news",
     slug: "news",
   },
+ 
+   {
+    name: "partners",
+    url: "/partners",
+    slug: "partnership",
+  },
   
 
   
