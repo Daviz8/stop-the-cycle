@@ -66,9 +66,9 @@ export const quarterlyTrainings = [
 ];
 
 export const annualSummit = {
-  title: 'Stop The Cycle National Summit',
+  title: 'Stop The Cycle Global Summit',
   description:
-    'Our flagship annual gathering for youth development and national transformation — bringing together leaders, professionals, entrepreneurs, speakers and over 3,000 delegates for training, skill acquisition, networking and national conversations.',
+    'Our flagship annual gathering for youth development and global transformation bringing together leaders, professionals, entrepreneurs, speakers and over 3,000 delegates for training, skill acquisition, networking and national conversations.',
 };
 
 export const tlcPillars = [
@@ -374,62 +374,10 @@ export const partners = [
   'Portland Resorts Hotels',
 ];
 
-export const homeGallery = [
-  { src: '/images/gallery/public-speaking-1.jpg', label: 'Public Speaking & Communication Masterclass' },
-  { src: '/images/gallery/emotional-intelligence-1.jpg', label: 'Emotional Intelligence Masterclass' },
-  { src: '/images/gallery/relationship-marriage-1.jpg', label: 'Relationship / Marriage Masterclass' },
-  { src: '/images/gallery/self-leadership-1.jpg', label: 'Self Leadership Masterclass' },
-  { src: '/images/gallery/value-business-1.jpg', label: 'Value Business Masterclass' },
-  { src: '/images/gallery/annual-summit-1.jpg', label: 'Annual Summit' },
-  { src: '/images/gallery/tlc-1.jpg', label: 'The Life Class Community' },
-  { src: '/images/gallery/community-service-1.jpg', label: 'Community Service' },
-];
-
-export const tlcGallery = [
-  { src: '/images/tlc/tlc-1.jpg', label: 'The Life Class Community' },
-  { src: '/images/tlc/tlc-2.jpg', label: 'The Life Class Community' },
-  { src: '/images/tlc/tlc-3.jpg', label: 'The Life Class Community' },
-  { src: '/images/tlc/tlc-4.jpg', label: 'The Life Class Community' },
-];
-
-export const publicSpeakingGallery = [
-  { src: '/images/gallery/public-speaking-1.jpg', label: 'Public Speaking & Communication Masterclass' },
-  { src: '/images/gallery/public-speaking-2.jpg', label: 'Public Speaking & Communication Masterclass' },
-  { src: '/images/gallery/public-speaking-3.jpg', label: 'Public Speaking & Communication Masterclass' },
-  { src: '/images/gallery/public-speaking-4.jpg', label: 'Public Speaking & Communication Masterclass' },
-];
-
-export const emotionalIntelligenceGallery = [
-  { src: '/images/gallery/emotional-intelligence-1.jpg', label: 'Emotional Intelligence Masterclass' },
-  { src: '/images/gallery/emotional-intelligence-2.jpg', label: 'Emotional Intelligence Masterclass' },
-  { src: '/images/gallery/emotional-intelligence-3.jpg', label: 'Emotional Intelligence Masterclass' },
-  { src: '/images/gallery/emotional-intelligence-4.jpg', label: 'Emotional Intelligence Masterclass' },
-];
-
-export const relationshipGallery = [
-  { src: '/images/gallery/relationship-marriage-1.jpg', label: 'Relationship / Marriage Masterclass' },
-  { src: '/images/gallery/relationship-marriage-2.jpg', label: 'Relationship / Marriage Masterclass' },
-  { src: '/images/gallery/relationship-marriage-3.jpg', label: 'Relationship / Marriage Masterclass' },
-  { src: '/images/gallery/relationship-marriage-4.jpg', label: 'Relationship / Marriage Masterclass' },
-];
-
-export const selfLeadershipGallery = [
-  { src: '/images/gallery/self-leadership-1.jpg', label: 'Self Leadership Masterclass' },
-  { src: '/images/gallery/self-leadership-2.jpg', label: 'Self Leadership Masterclass' },
-  { src: '/images/gallery/self-leadership-3.jpg', label: 'Self Leadership Masterclass' },
-  { src: '/images/gallery/self-leadership-4.jpg', label: 'Self Leadership Masterclass' },
-];
-
-export const summitGallery = [
-  { src: '/images/gallery/annual-summit-1.jpg', label: 'Annual Summit' },
-  { src: '/images/gallery/annual-summit-2.jpg', label: 'Annual Summit' },
-  { src: '/images/gallery/annual-summit-3.jpg', label: 'Annual Summit' },
-  { src: '/images/gallery/annual-summit-4.jpg', label: 'Annual Summit' },
-];
-
-export const communityGallery = [
-  { src: '/images/gallery/community-service-1.jpg', label: 'Community Service' },
-  { src: '/images/gallery/community-service-2.jpg', label: 'Community Service' },
-  { src: '/images/gallery/grants-awards-1.jpg', label: 'Grants and Awards' },
-  { src: '/images/gallery/grants-awards-2.jpg', label: 'Grants and Awards' },
-];
+export const communityGallery = Array.from({ length: 73 }, (_, i) => {
+  const n = String(i + 1).padStart(2, '0');
+  return {
+    src: `/images/community/${n}.jpg`,
+    label: 'Moments from our community',
+  };
+});

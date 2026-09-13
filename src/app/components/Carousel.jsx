@@ -3,12 +3,11 @@
 import { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import Photo from './Photo';
 
 export default function Carousel({
   slides = [],
   itemClass = 'w-[85%] sm:w-[58%] lg:w-[32%]',
-  aspect = 'aspect-[4/3]',
+  aspect = 'aspect-full',
   rounded = 'rounded-2xl',
   className = '',
   autoplay = true,
@@ -58,7 +57,6 @@ export default function Carousel({
 
   return (
     <div className={`relative ${className}`}>
-      {/* Viewport */}
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex gap-4">
           {slides.map((slide, index) => (
@@ -66,18 +64,22 @@ export default function Carousel({
               key={`${slide.src}-${index}`}
               className={`shrink-0 grow-0 ${itemClass}`}
             >
-              <Photo
-                src={slide.src}
-                alt={slide.alt}
-                label={slide.label}
-                className={`${aspect} w-full ${rounded} shadow-lg shadow-[#172546]/10`}
-              />
+              <div
+                className={`relative overflow-hidden bg-gradient-to-br from-[#217A4B] via-[#172546] to-[#D4A024] ${aspect} w-full ${rounded} shadow-lg shadow-[#172546]/10`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={slide.src}
+                  alt={slide.alt || slide.label || 'Gallery image'}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Controls */}
       <div className="mt-6 flex items-center justify-center gap-3">
         <button
           type="button"

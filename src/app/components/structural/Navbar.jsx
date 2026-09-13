@@ -61,7 +61,7 @@ export default function Navbar() {
           >
             <span className="relative grid size-12 place-items-center overflow-hidden rounded-2xl text-white shadow-[0_10px_28px_rgba(33,122,75,0.25)] transition duration-300 group-hover:rotate-3 group-hover:scale-105">
               <img
-                src="/images/love-city-church-logo.webp"
+                src="/images/stop the cycle.webp"
                 className="size-11"
                 strokeWidth={2.2}
                 alt="TSM Logo"
@@ -138,7 +138,7 @@ export default function Navbar() {
           >
             <span className="grid size-12 place-items-center rounded-2xl text-white">
               <img
-                src="/images/love-city-church-logo.webp"
+                src="/images/stop the cycle.webp"
                 className="size-11"
                 strokeWidth={2.2}
                 alt="TSM Logo"
