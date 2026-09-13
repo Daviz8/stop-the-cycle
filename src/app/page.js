@@ -379,7 +379,7 @@ function TLC() {
                 📍 Port Harcourt City, Nigeria
               </span>
               <a
-                href={site.registerUrl}
+                href="https://chat.whatsapp.com/HobknONJKdh71zsZFVwvoA"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#217A4B] px-6 py-3 font-montserrat text-sm font-bold text-white transition hover:bg-[#D4A024] hover:text-[#172546]"
@@ -536,7 +536,7 @@ function FinalCTA() {
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href={site.registerUrl}
+            href="/partners"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#D4A024] px-8 py-4 font-montserrat text-sm font-extrabold text-[#172546] shadow-xl transition hover:-translate-y-0.5 hover:bg-white"

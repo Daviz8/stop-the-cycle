@@ -28,7 +28,6 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               {[
                 { href: '/', label: 'Home' },
-                { href: '/about', label: 'About Us' },
                 { href: '/#programs', label: 'Our Programs' },
                 { href: '/#tlc', label: 'The Life Class' },
                 { href: '/#summit', label: 'Global Summit' },
