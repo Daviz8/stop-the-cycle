@@ -4,6 +4,7 @@ import PartnerTiers from "../components/  PartnerTiers";
 import SectionHeading from "../components/SectionHeading";
 import { partners } from "@/lib/data";
 import { site } from '@/lib/site';
+    import Image from 'next/image';
 
 export default function Partnership() {
       const doubled = [...partners, ...partners];
@@ -91,7 +92,32 @@ export default function Partnership() {
           ))}
         </div>
       </div>
+    </section> 
+
+ 
+    <section className="bg-[#F9F2ED] py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto flex max-w-6xl flex-col items-center px-5 lg:px-8">
+        <p className="font-montserrat text-xs font-bold uppercase tracking-[0.3em] text-[#217A4B]">
+          Our Partners
+        </p>
+
+        <h2 className="mt-4 max-w-2xl text-center font-montserrat text-2xl font-extrabold text-[#172546] sm:text-3xl lg:text-4xl">
+          Brands and organisations standing with us
+        </h2>
+
+        <div className="mt-10 w-full overflow-hidden rounded-3xl border border-[#217A4B]/10 bg-white shadow-[0_25px_80px_rgba(23,37,70,0.08)]">
+          <Image
+            src="/images/partners.jpeg"
+            alt="Stop The Cycle Initiative partners"
+            width={1600}
+            height={1200}
+            className="h-auto w-full object-contain"
+            priority={false}
+          />
+        </div>
+      </div>
     </section>
+
     </>
   );
 }

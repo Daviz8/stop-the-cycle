@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import TestimonialSlider from './components/TestimonialCarousel';
 import SectionHeading from './components/SectionHeading';
+import Carousel from './components/Carousel';
+import { communityGallery } from '@/lib/data';
 import { site } from '@/lib/site';
 import {
   stats,
@@ -490,10 +492,12 @@ function Gallery() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="In Pictures"
-          title="Moments from our community"
+          title="Moments From The Stop The Cycle Initiative "
           description="Masterclasses, summits, community service and the everyday work of breaking cycles."
         />
         <div className="mt-14">
+          <Carousel slides={communityGallery} />
+
         </div>
       </div>
     </section>
