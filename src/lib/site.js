@@ -2,7 +2,7 @@ export const site = {
   name: 'Stop The Cycle Initiative',
   shortName: 'Stop The Cycle',
   poweredBy: 'Uche Juan Foundation',
-  registerUrl: 'https://chat.whatsapp.com/HobknONJKdh71zsZFVwvoA',
+  registerUrl: 'https://surveyheart.com/form/6a0982221fdb9c954f1a5d8b?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
 
   contact: {
     phones: ['0803 725 2665', '0901 517 7400', '0703 064 0958', '0813 507 1183'],
